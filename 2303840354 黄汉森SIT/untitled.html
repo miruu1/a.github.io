@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>淘宝购物</title>
+<link rel="icon" type="png" href="images/QQ截图20240103225824.png">
+<link rel="stylesheet" href="./css/css.css">
+</head>
+	
+<body>
+	<div class="banner">
+		<div class="banner_content w">
+			<ul class="banner_left">
+			<li class="taobao"><a href="">淘宝</a>
+				<div class="drop">
+					<ul>
+						<li><a href="">咨询</a></li>
+						<li><a href="">合作</a></li>
+						<li><a href="">股票</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="">联系我们</a></li>
+			<li><a href="">账号</a></li>
+			</ul>
+			<ul class="banner_right">
+			<li><a href="">联系客服</a></li>
+			<li><a href="">收藏夹</a></li>
+			<li><a href="">购物车</a></li>
+			<li><img src="images/O1CN013cC24N1Um4HzMwyE7_!!6000000002559-2-tps-52-46.png" alt="" style="width: 20px;height: 20px; margin-top: 15px;"></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="sousuo w">
+		<img src="./images/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png" alt="">
+		<div class="sousuokuang"><input type="text" class=""></div>
+		<button type="submit">搜索</button> 
+		<div class="tuijian"><a href="">新款连衣裙</a> <a href="">四件套</a> <a href="">潮流T恤</a> <a href="">时尚女鞋</a> <a href="">短裤</a> <a href="">半身裙</a> <a href="">男士外套</a> <a href="">墙纸</a> <a href="">行车记录仪</a> <a href="">新款男鞋</a> </div>
+	</div>
+	
+	<div class="wenzi w">
+		<div class="gund">春节历史悠久，起源于早期人类的原始信仰与自然崇拜，由上古时代岁首祈岁祭祀演变而来。万物本乎天、人本乎祖，祈岁祭祀、敬天法祖，报本反始也。春节的起源蕴含着深邃的文化内涵，在传承发展中承载了丰厚的历史文化底蕴。在春节期间，全国各地均有举行各种庆贺新春活动，带有浓郁的各地地方特色</div>
+	</div>
+	
+	<div class="content w">
+		
+			<div class="container">
+				<div class="head"><p>账号登陆</p></div>
+				<form action="" onSubmit="return denglutiaozhuan();">
+					<div class="c">
+						<label for="">手机号</label>
+						<input type="text" id="username" class="" placeholder="请输入手机号码：默认12345678912">
+						<i id="l"></i>
+						<div id="ruleusername">
+							<p id="zhanghaoisnull" class="invalid">手机号不能为空</p>
+							<p id="zhanghaoiszimu" class="invalid">手机号不能为字母</p>
+							<p id="zhanghaolength" class="invalid">长度位11位的手机号码</p>
+						</div>
+					</div>
+					<div class="c">
+						<label for="">密码</label>
+						<input type="text" id="password" placeholder="请输入登陆密码：默认88888888">
+						<i id="ll"></i>
+						<div id="rulepassword">
+							<p id="mimaisnull" class="invalid">密码不能为空</p>
+							<p id="mimalength" class="invalid">长度位8位以上的密码</p>
+						</div>
+					</div>
+					<button type="submit" id="logo" class="logo" onClick="denglutiaozhuan()">登陆</button>
+					<button type="button" id="register" class="register" onClick="zhucetiaozhuan()">注册</button>
+					<div class="kuaijie">
+						<a href=""><span><img src="./images/微信截图_20240102223301.png" alt=""></span><p>宝贝收藏</p></a>
+						<a href=""><span><img src="./images/微信截图_20240102223322.png" alt=""></span><p>买过的点</p></a>
+						<a href=""><span><img src="./images/微信截图_20240102223331.png" alt=""></span><p>收藏的店</p></a>
+						<a href=""><span><img src="./images/微信截图_20240102223351.png" alt=""></span><p>我的足迹</p></a>
+					</div>
+				</form>
+			</div>
+			
+			<div class="fous">
+				<div class="img_list">
+					<img src="./images/O1CN017Z2XUL1nnQ94i2MTP_!!6000000005134-0-tps-846-472.webp" alt="">
+					<img src="./images/O1CN017Z2XUL1nnQ94i2MTP_!!6000000005134-0-tps-846-472.webp" alt="">
+					<img src="./images/O1CN01Sf6dER1zbJ3uVQ0lE_!!6000000006732-0-tps-846-472.jpg" alt="">
+					<img src="images/O1CN01XZC8Dd1IUs179sweg_!!6000000000897-2-tps-846-472.png" alt="">
+					<img src="images/O1CN01a71ilU1T2RCTvUXDY_!!6000000002324-0-tps-846-472.jpg" alt="">
+					<img src="images/O1CN01YGUXOM1k5VKBPo5J3_!!6000000004632-2-tps-846-472.png" alt="">
+				</div>
+				<button onClick="left_function()" type="button" class="left" id="left">&lt;</button>
+				<button onClick="right_function()" type="button" class="right" id="right">&gt;</button>
+			</div>
+			
+			<div class="fenlei">
+				<img src="./images/微信截图_20240102223301.png" alt=""><p><a href="">女装</a>/<a href="">内衣</a>/ <a href="">奢品</a></p>
+				<p><a href="">女鞋</a>/<a href="">男鞋</a>/ <a href="">箱包</a></p>
+				<p><a href="">美妆</a>/<a href="">饰品</a>/ <a href="">洗护</a></p>
+				<p><a href="">男装</a>/<a href="">运动</a>/ <a href="">百货</a></p>
+				<p><a href="">手机</a>/<a href="">数码</a>/ <a href="">企业礼品</a></p>
+				<img src="./images/微信截图_20240102223322.png" alt=""><p><a href="">家装</a>/<a href="">电器</a>/ <a href="">车品</a></p>
+				<p><a href="">食品</a>/<a href="">生鲜</a>/ <a href="">母婴</a></p>
+				<p><a href="">医药</a>/<a href="">保健</a>/ <a href="">进口</a></p>
+				<p><a href="">女装</a>/<a href="">内衣</a>/ <a href="">奢品</a></p>
+				<p><a href="">女装</a>/<a href="">内衣</a>/ <a href="">奢品</a></p>
+			</div>
+			<div class="xiazai">
+				<img src="./images/QQ截图20240103210629.png" alt="">
+			</div>
+		
+			<h2 style="margin:20px 20px 0 50px;">猜你喜欢</h2><img src="images/O1CN016b1mMM1FxJlsXfWhU_!!6000000000553-2-tps-96-30.png" alt="" class="ii">
+			<div class="shangp_kuang">
+				
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01WpvILo26Q2j172wUR_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/TB18YHBKFXXXXaVXpXXXXXXXXXX_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				<div class="shangp">
+					<ul>
+						<li><img src="images/O1CN01VDTglP2LdWUZPQ849_!!0-item_pic.jpg_300x300q90.jpg_.jpg" alt=""></li>
+						<li><p>日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p></li>
+					</ul>
+					<p class="jiage">&yen;40.8</p>
+				</div>
+				
+			</div>
+	</div>
+	<div class="gua">
+		<ul>
+			<div><p><img src="https://img.alicdn.com/imgextra/i1/O1CN013cC24N1Um4HzMwyE7_!!6000000002559-2-tps-52-46.png" alt=""></p><li>消息 </li></div>
+			<div><p><img src="images/O1CN013cC24N1Um4HzMwyE7_!!6000000002559-2-tps-52-46.png" alt=""></p><li>官方客服</li></div>
+			<div><p><img src="images/O1CN013cC24N1Um4HzMwyE7_!!6000000002559-2-tps-52-46.png" alt=""></p><li>反馈</li></div>
+			<div><p><img src="images/O1CN013cC24N1Um4HzMwyE7_!!6000000002559-2-tps-52-46.png" alt=""></p><li>举报</li></div>
+		</ul>
+	</div>
+	
+	
+	<div class="foot_kuang">
+		<div class="foot w">
+		<div>阿里巴巴集团|淘宝网|天猫|聚划算|全球速卖通|阿里巴巴国际交易市场|1688|阿里妈妈|飞猪|阿里云计算|AliOS|阿里通信|一淘|万网|高德|UC|友盟|阿里安全|
+大麦网|钉钉|支付宝|优酷|土豆|阿里健康|阿里影业|网商银行|造点新货（众筹）|</div>
+
+		<div>关于淘宝营销中心廉正举报联系客服开放平台诚征英才联系我们隐私权政策法律声明知识产权不当竞争举报|© 2003-现在 Taobao.com 版权所有</div>
+
+		<div>增值电信业务经营许可证：浙B2-20080224|增值电信业务经营许可证（跨地区）： B2-20150210|浙网文【2022】0403-017号|浙江省网络食品销售第三方平台提供者备案：浙网食A33010001|</div>
+
+		<div>互联网药品信息服务资格证书（浙）-经营性-2023-0008|短消息类服务接入代码使用证书：号【2016】00154-A01|信息网络传播视听许可证：1109364号|出版物网络交易平台服务经营备案号：新出发浙备字第002号|</div>
+
+		<div>浙公网安备 33010002000078号|浙B2-20080224-1|广播电视节目制作经营许可证（浙）字第01012号|市场名称登记证：工商网市字3301004120号|医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号|互联网违法和不良信息举报电话：0571-81683755 jubao.tb@service.taobao.com|中国扫黄打非网|全国文化和旅游市场网上举报投诉处理系统|全国12315平台|浙江省互联网违法和不良信息举报中心|全网举报|营业性演出许可证：浙演经20213300000069|</div>
+	</div>
+	</div>
+</body>
+<script src="./js/js.js"></script>
+
+</html>

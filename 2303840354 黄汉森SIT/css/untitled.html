@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	.fous{
+		overflow: hidden;
+		position: relative;
+		width: 860px;
+		height: 480px;
+	}	
+	.img_list{
+		position: relative;
+		display: flex;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		transition: 0.5s ease;
+	}
+	
+	
+</style>
+</head>
+<body>
+	<div class="fous">
+		<div class="img_list">
+			<img src="../images/O1CN01Sf6dER1zbJ3uVQ0lE_!!6000000006732-0-tps-846-472.jpg" alt="">
+			<img src="../images/O1CN01XZC8Dd1IUs179sweg_!!6000000000897-2-tps-846-472.png" alt="">
+			<img src="../images/O1CN017Z2XUL1nnQ94i2MTP_!!6000000005134-0-tps-846-472.webp" alt="">
+			<img src="../images/O1CN01Sf6dER1zbJ3uVQ0lE_!!6000000006732-0-tps-846-472.jpg" alt="">
+		</div>
+	</div>
+</body>
+<script>
+	var f = document.querySelector(".fous");
+	var w = f.offsetWidth;
+	var i = document.querySelector(".img_list");
+	var index = 0;
+	var timer = setInterval(function(){
+		index++;
+		if(index>3){
+			index=0;
+		}
+		i.style.left=-(index*w)+'px';
+	},1000)
+</script>
+</html>
